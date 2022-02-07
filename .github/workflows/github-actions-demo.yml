@@ -16,5 +16,5 @@ jobs:
           ls ${{ github.workspace }}
       - name: build calc
         run: 
-          gcc calc.cpp -o calc
+          g++ calc.cpp -o calc
       - run: echo "🍏 This job's status is ${{ job.status }}."
