@@ -22,8 +22,12 @@ int divi (int a, int b)
     return a/b;
 }
 
+#include "ftest.h"
+
 int main()
 {
+    FTEST_RUN
+
     int a, b, res;
     char c;
     cin >> a >> c >> b;
