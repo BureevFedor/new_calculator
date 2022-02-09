@@ -19,5 +19,5 @@ jobs:
           g++ calc.cpp -o calc
       - name: run tests
         run:
-          ./tests/test_runner.sh ${{ github.workspace }}
+          tests/test_runner.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
