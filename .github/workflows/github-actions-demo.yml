@@ -21,6 +21,6 @@ jobs:
         run: |
           chmod +x tests/test_runner.sh
       - run: tests/test_runner.sh
-      - run: calc
+      - run: ./calc
       - run: echo "help"
       - run: echo "🍏 This job's status is ${{ job.status }}."
