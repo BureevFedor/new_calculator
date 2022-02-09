@@ -1,9 +1,9 @@
 #!/bin/bash
 
-tests = "test_sum_1 test_sum_2"
-echo $tests
+tests_names = "test_sum_1 test_sum_2"
+echo $tests_names
 
-for test in $tests; do
+for test in $tests_names; do
 	echo $test
 	./calc <tests/$test.in >$test.res
 	cat $test.res
