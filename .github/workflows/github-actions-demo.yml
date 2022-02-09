@@ -20,4 +20,5 @@ jobs:
       - name: run tests
         run: |
           cat tests/test_runner.sh 
+      - run: echo "help"
       - run: echo "🍏 This job's status is ${{ job.status }}."
