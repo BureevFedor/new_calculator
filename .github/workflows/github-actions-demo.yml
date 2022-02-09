@@ -18,6 +18,6 @@ jobs:
         run: 
           g++ calc.cpp -o calc
       - name: run tests
-	run:
-	  ./tests/test_runner.sh ${{ github.workspace }}
+        run:
+          ./tests/test_runner.sh ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
