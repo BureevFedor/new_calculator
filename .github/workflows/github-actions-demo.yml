@@ -22,6 +22,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: run tests
-        run: echo 17 
+        run: diff 17 18 
       - run: echo "🍏 This test job status is ${{ job.status }}."
       
