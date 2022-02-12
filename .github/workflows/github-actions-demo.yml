@@ -17,7 +17,10 @@ jobs:
       - name: build
         run: 
           g++ calc.cpp -o calc
+      - name: build tests
+        run: 
+          g++ calc.cpp -DFTESTS -o calc-tests
       - name: run tests
-        run: |
-          cat tests/test_runner.sh 
+        run: 
+          calc-tests
       - run: echo "🍏 This job's status is ${{ job.status }}."
