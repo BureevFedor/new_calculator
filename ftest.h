@@ -24,7 +24,7 @@ int ftests()
     FTEST_CASE_START("sum")
         FTEST("sum1", sum(1,4) == 5)
         FTEST("sum2", sum(1,2) == 3)
-        FTEST("sum3", sum(4,4) == 9) //should fail
+        FTEST("sum3", sum(4,4) == 8)
         FTEST("sum4", sum(33,9) == 42)
     FTEST_CASE_END
 
@@ -36,7 +36,7 @@ int ftests()
     FTEST_CASE_END
 
     FTEST_CASE_START("mult")
-        FTEST("mult1", mult(2,4) == 6) //should fail
+        FTEST("mult1", mult(2,4) == 8)
         FTEST("mult2", mult(5,0) == 0)
         FTEST("mult3", mult(6,1) == 6) 
         FTEST("mult4", mult(4,4) == 16)
