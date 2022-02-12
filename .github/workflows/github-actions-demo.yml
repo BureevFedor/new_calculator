@@ -22,5 +22,5 @@ jobs:
           g++ calc.cpp -DFTESTS -o calc-tests
       - name: run tests
         run: 
-          calc-tests
+          ./calc-tests
       - run: echo "🍏 This job's status is ${{ job.status }}."
