@@ -68,8 +68,10 @@ int ftests()
         FTEST("numsys2", numsys(6,3) == "20")
         FTEST("numsys3", numsys(156,10) == "156")
         FTEST("numsys4", numsys(15,16) == "F")
-        FTEST("numsys4", numsys(29,30) == "T")
-        FTEST("numsys4", numsys(15,1) == "111111111111111")
+        FTEST("numsys5", numsys(29,30) == "T")
+        FTEST("numsys6", numsys(15,1) == "111111111111111")
+        FTEST("numsys7", numsys(36,37) == "$")
+        FTEST("numsys8", numsys(38,37) == "11")
     FTEST_CASE_END
 
     cout << "number of passed tests: " << num_of_passed << endl << "number of failed tests: " << num_of_failed << endl;
