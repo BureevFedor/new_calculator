@@ -56,6 +56,22 @@ int ftests()
         FTEST("power4", power(40,2) == 1600)
     FTEST_CASE_END
 
+    FTEST_CASE_START("power")
+        FTEST("power1", power(4,2) == 16)
+        FTEST("power2", power(6,2) == 36)
+        FTEST("power3", power(1,1) == 1)
+        FTEST("power4", power(40,2) == 1600)
+    FTEST_CASE_END
+
+    FTEST_CASE_START("numsys")
+        FTEST("numsys1", numsys(4,2) == "100")
+        FTEST("numsys2", numsys(6,3) == "20")
+        FTEST("numsys3", numsys(156,10) == "156")
+        FTEST("numsys4", numsys(15,16) == "F")
+        FTEST("numsys4", numsys(29,30) == "T")
+        FTEST("numsys4", numsys(15,1) == "111111111111111")
+    FTEST_CASE_END
+
     cout << "number of passed tests: " << num_of_passed << endl << "number of failed tests: " << num_of_failed << endl;
     return num_of_failed;
 }
