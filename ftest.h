@@ -46,7 +46,14 @@ int ftests()
         FTEST("divi1", divi(4,2) == 2)
         FTEST("divi2", divi(6,6) == 1)
         FTEST("divi3", divi(5,1) == 5) 
-    FTEST("divi4", divi(40,10) == 4)
+        FTEST("divi4", divi(40,10) == 4)
+    FTEST_CASE_END
+
+    FTEST_CASE_START("power")
+        FTEST("power1", power(4,2) == 16)
+        FTEST("power2", power(6,2) == 36)
+        FTEST("power3", power(1,1) == 1)
+        FTEST("power4", power(40,2) == 1600)
     FTEST_CASE_END
 
     cout << "number of passed tests: " << num_of_passed << endl << "number of failed tests: " << num_of_failed << endl;
